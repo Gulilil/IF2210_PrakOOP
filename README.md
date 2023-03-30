@@ -10,3 +10,4 @@
 |     | 3 | Generic Class, Exception, and Inheritance | Responsi | 100 | &cross; | |
 |     |   |   UTS    | Ujian Praktikum | 54 | 79 | Bukan latihan praktikum. Tapi olympianya sempet error jadi ada perbaikan buat satu nomor doang.|
 |Java | 4 | Introduction to Java | Responsi  | 100 | &cross; | |
+|     |   |      | Praktikum  | 100 | 100 | |
