@@ -12,3 +12,4 @@
 |Java | 4 | Introduction to Java | Responsi  | 100 | &cross; | |
 |     |   |      | Praktikum  | 100 | 100 | |
 |      | 5 | Generic & Java API | Responsi  | 100 | &cross; | |
+|      |   |     | Praktikum  | 100 | 100 | |
