@@ -13,3 +13,4 @@
 |     |   |      | Praktikum  | 100 | 100 | |
 |      | 5 | Generic & Java API | Responsi  | 100 | &cross; | |
 |      |   |     | Praktikum  | 100 | 100 | |
+|      | 6 | Exception, Design Pattern, Threading & Reflection | Responsi  | 100 | &cross; | |
