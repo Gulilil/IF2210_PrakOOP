@@ -1,0 +1,34 @@
+Berikut adalah langkah yang dilakukan untuk merefaktor sehingga program memenuhi prinsip SOLID:
+
+S (Single Responsibility):
+Pemindahan atribut list<Product> ke class baru dengan nama ShoppingCart.
+Tak hanya itu, method-method yang berikatan dengan list juga dipindahkan seperti Add, Remove, dsb.
+Hal ini dilakukan untuk menjaga Single Responsibility dari class Product.
+
+O (Open Closed Principle):
+Penambahan method calculateTotalPrice pada class ShoppingCart.
+Hal ini digunakan untuk membedakan perhitungan total untuk calculateTotalPrice dan 
+calculateShoppingCartsTotalPrice. Method calculateTotalPrice digunakan untuk menghitung jumlah total
+ditambah dengan produk yang memiliki Tax. Disisi lain, calculateShoppingCartsTotalPrice digunakan
+untuk menghitung HANYA harga produk tanpa Tax. Hal ini dilakukan untuk memenuhi prinsip Open Closed
+dimana kita dapat menambahkan tetapi tidak bisa mengurangi yang telah ada.
+
+
+L (Liskov Substitution):
+Pengubahan type atribut pada product dari PRIVATE menjadi PROTECTED.
+Hal ini dilakukan agar atribut pada parent class dapat diakses juga oleh children classes,
+guna memenuhi Liskov Substitution dimana parent dan children dapat saling 'interchangable'.
+
+
+I ( Interface Segregation Principle):
+Pengubahan method calculateTax dari turunan class Product menjadi sebuah interface dengan nama Taxable.
+Hal ini dilakukan agar tidak memaksa class yang tidak memiliki Tax untuk menggunakan Tax.
+Seperti halnya pada FoodProduct, karena ada tax yang diimplementasi, maka tidak perlu implements Taxable.
+Di sisi lain, Product dan ElectronicsProduct implements Taxable.
+
+
+D ( Dependency Inversion):
+Class PaymentProcessor diubah menjadi interface dengan nama yang sama.
+Hal ini dilakukan untuk meminimalisir dependency satu concrete class pada concrete class lainnya.
+Maka dari itu, dengan diubahnya PaymentProcessor menjadi interface, hal ini meningkatkan abstraksi
+penggunaan dari PaymentProcessor sehingga dapat dengan lebih fleksibel digunakan oleh class lain.
